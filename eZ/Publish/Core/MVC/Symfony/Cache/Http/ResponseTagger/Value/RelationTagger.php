@@ -7,7 +7,7 @@ use eZ\Publish\Core\MVC\Symfony\Cache\Http\ResponseTagger\ResponseTagger;
 use eZ\Publish\Core\Repository\Values\Content\Relation;
 use Symfony\Component\HttpFoundation\Response;
 
-class RelationValueTagger implements ResponseTagger
+class RelationTagger implements ResponseTagger
 {
     public function tag(ResponseCacheConfigurator $configurator, Response $response, $relation)
     {

@@ -4,7 +4,7 @@ namespace spec\eZ\Publish\Core\MVC\Symfony\Cache\Http\ResponseTagger\Value;
 
 use eZ\Publish\API\Repository\Values\Content\ContentInfo;
 use eZ\Publish\Core\MVC\Symfony\Cache\Http\ResponseCacheConfigurator;
-use eZ\Publish\Core\MVC\Symfony\Cache\Http\ResponseTagger\Value\RelationValueTagger;
+use eZ\Publish\Core\MVC\Symfony\Cache\Http\ResponseTagger\Value\RelationTagger;
 use eZ\Publish\Core\Repository\Values\Content\Relation;
 use PhpSpec\ObjectBehavior;
 use Symfony\Component\HttpFoundation\Response;
@@ -13,7 +13,7 @@ class RelationTaggerSpec extends ObjectBehavior
 {
     public function it_is_initializable()
     {
-        $this->shouldHaveType(RelationValueTagger::class);
+        $this->shouldHaveType(RelationTagger::class);
     }
 
     public function it_tags_with_the_destination_relation_id(

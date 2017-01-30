@@ -24,6 +24,6 @@ services:
             - {name: ezplatform.cache_response_tagger}
 
     http_cache.response_tagger.relation:
-        class: 'eZ\Publish\Core\MVC\Symfony\Cache\Http\ResponseTagger\Value\RelationValueTagger'
+        class: 'eZ\Publish\Core\MVC\Symfony\Cache\Http\ResponseTagger\Value\RelationTagger'
         tags:
             - {name: ezplatform.cache_response_tagger}
